@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "b1db8c05-fec1-460e-b448-3db9049fa530",
+		"name": "Api Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16761772",
+		"_collection_link": "https://speeding-eclipse-352616.postman.co/workspace/NTT-DATA~eb79af09-1efd-4743-9ef6-70ef4be7c2e6/collection/16761772-b1db8c05-fec1-460e-b448-3db9049fa530?action=share&source=collection_link&creator=16761772"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/api/v1/products/?SALES=1&S=0&M=0&L=0",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						""
+					],
+					"query": [
+						{
+							"key": "SALES",
+							"value": "1"
+						},
+						{
+							"key": "S",
+							"value": "0"
+						},
+						{
+							"key": "M",
+							"value": "0"
+						},
+						{
+							"key": "L",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

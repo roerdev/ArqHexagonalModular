@@ -1,0 +1,38 @@
+server:
+    port: 8081
+spring:
+    datasource:
+        url: jdbc:h2:mem:testdb
+        driver-class-name: org.h2.Driver
+        username: sa
+        password: ''
+    h2:
+        console:
+            enabled: true
+            settings:
+                web-allow-others: true
+                trace: false
+            path: /h2-console
+            allowed-origins: "*"
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+    sql:
+        init:
+            platform: h2
+            mode: always
+    flyway:
+        enabled: true
+        locations: classpath:/db/migration
+        baseline-on-migrate: true
+logging:
+    level:
+        root: INFO
+        com.roerdev.arqhexagonalmodular: TRACE
+springdoc:
+    swagger-ui:
+        path: /swagger-ui.html
+        supported-submit-methods: GET,POST,PUT,DELETE
+        enabled: true
