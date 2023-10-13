@@ -1,6 +1,6 @@
-# Microservicio de Gestión de Precios
+# Microservicio de Gestión de Productos
 
-Este microservicio de gestión de precios está diseñado para administrar y consultar información de precios. A continuación, se describen los requisitos para desplegar la aplicación, una breve explicación de cada endpoint y cómo acceder a la documentación de la API a través de Swagger.
+Este microservicio de gestión de productos está diseñado para administrar y consultar información de precios. A continuación, se describen los requisitos para desplegar la aplicación, una breve explicación de cada endpoint y cómo acceder a la documentación de la API a través de Swagger.
 
 ## Requisitos para Desplegar la Aplicación
 
