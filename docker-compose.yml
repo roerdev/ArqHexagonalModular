@@ -1,9 +1,9 @@
-version: '3.4'
+version: '3.9'
 services:
   product:
-    build:
-      context: ..
-      dockerfile: ./ArqHexagonalModular/Dockerfile
+    container_name: arquitectura-hexagonal
+    image: app-hex-spring:1.0.0
+    build: .
     ports:
       - 8081:8081
     environment:
